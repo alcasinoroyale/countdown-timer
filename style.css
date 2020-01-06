@@ -36,8 +36,8 @@ h1 {
 	position: relative;
 	display: flex;
 	flex-direction: row;
-  width: 900px;
-	height: 300px;
+  width: 60rem;
+	height: 20rem;
 	background-color: transparent;
 	border-radius: 4px;
 	box-shadow: none;
@@ -46,7 +46,7 @@ h1 {
 .clock-column {
 	text-align: center;
 	position: relative;
-  margin-right: 100px;
+  margin-right: 80px;
 
 	&::after {
 		content: ':';
@@ -65,6 +65,10 @@ h1 {
 			display: none;
 		}
 	}
+}
+
+.clock-column:last-child {
+	margin-right: 0;
 }
 
 .clock-label {
@@ -99,4 +103,9 @@ input#time-to {
 	text-align: center;
 	color: #141414;
 	background-color: #d1e0e3;
+}
+
+.done {
+	color: #fff;
+	font-weight: 800;
 }
